@@ -1,0 +1,506 @@
+/* Parámetros Globales de Estilo */
+
+/*Etiquetas de Títulos*/
+h1, h2, h3 { font-family: 'Rokkitt', serif; }
+
+/*Etiquetas Subtítulos, Párrafos y Enlaces*/
+h4, h5, h6, p, a { font-family: 'Rokkitt', serif; }
+
+
+
+/*Estilos propios del sitio web*/
+aside#menu-cortina {
+    width: 250px;  
+    height: 300px;
+    display: block;
+    margin: 0;
+    float: none;
+    position: fixed;
+    
+    top: 0;
+    right: -300px;
+    z-index: 99991;                 
+    
+    background: #F0853E;
+}
+
+aside#menu-cortina a#abrir {}
+aside#menu-cortina a#abrir i {}
+aside#menu-cortina a#abrir:hover {}
+aside#menu-cortina a#abrir:hover i {}
+
+aside#menu-cortina a#cerrar {}
+aside#menu-cortina a#cerrar i {}
+aside#menu-cortina a#cerrar:hover {}
+aside#menu-cortina a#cerrar:hover i {}
+
+aside#menu-cortina nav#menu-idiomas-movil {}
+aside#menu-cortina nav#menu-idiomas-movil a {}
+aside#menu-cortina nav#menu-idiomas-movil a:hover {}
+aside#menu-cortina nav#menu-idiomas-movil a#idioma-activo-movil {}
+aside#menu-cortina nav#menu-idiomas-movil span {}
+
+aside#menu-cortina nav#menu-principal-movil {}
+aside#menu-cortina nav#menu-principal-movil a {}
+aside#menu-cortina nav#menu-principal-movil a:hover {}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99990;
+    background: #000;
+    box-shadow: 0 1px 3px #1d1c1b;              
+}
+
+header article {                       
+    width: 1200px;             
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+}
+
+header article a#logo {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 0px;
+    float: left;
+    position: relative;
+    
+    transition: all 0.3s ease-out;
+}
+header article a#logo:hover {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 0.3s ease-out;
+}
+header article a#logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+    
+header article nav#menu-principal {
+    width: 446px;
+    height: 45px;
+    display: block;
+    margin: 80px 0 0 0;
+    float: right;
+    position: relative;
+}
+header article nav#menu-principal a {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #F0853E;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1em;
+    letter-spacing: 0px;
+    
+    transition: all 0.3s ease-out;
+}
+header article nav#menu-principal a:hover{
+    color: #ffffff;
+    background: #141414; opacity: 80%;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+header article nav#menu-principal a.activo {
+    color: #ffffff;
+    background: #141414; opacity: 80%;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+header article nav#menu-idiomas {
+    width: 78px;
+    height: 30px;
+    display: block;
+    margin: 5px 0 0 0;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header article nav#menu-redes-sociales {
+    width: 60px;
+    height: 30px;
+    display: block;
+    margin: 5px 0 0 0;
+    float: right;
+    position: absolute;
+    top: 33px;
+    right: -40px;
+    z-index: 2;
+}
+header article nav#menu-idiomas a {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    padding: 5px 2px;
+    text-decoration: none;
+    color: #F0853E;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.1em;
+    line-height: 1em;
+    letter-spacing: 0px;
+    transition: all 0.3s ease-out;
+}
+header article nav#menu-idiomas a:hover {
+   color: #ffffff;
+   transition: all 0.3s ease-out;
+}
+header article nav#menu-idiomas a#idioma-activo {
+   color: #ffffff;
+   transition: all 0.3s ease-out;
+}
+
+header article nav#menu-idiomas span {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 4px;
+    float: left;
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+}
+header article nav#menu-redes-sociales {
+    width: 26px;
+    height: 30px;
+    display: block;
+    margin: 8px;
+    float: right;
+    position: absolute;
+    top: 33px;
+    right: 9px;
+    z-index: 2;
+}
+header article nav#menu-redes-sociales a {
+    width: 25px;
+    height: 18px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    padding: 0;
+    text-decoration: none;
+    background: #f0853e;
+    padding: 4px 1px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1em;
+    border-radius: 50%;
+    letter-spacing: 0px;
+    transition: all 0.3s ease-out;
+}
+header article nav#menu.redes-sociales a i {
+     color: #ffffff;
+     transition: all 0.3s ease-out;
+}
+header article nav#menu-redes-sociales a:hover {
+     background: #ffffff;
+     color: #f0853e; 
+     transition: all 0.3s ease-out;
+}
+header article nav#manu-redes-sociacles a:hover i {
+     color: #f0853e;
+     transition: all 0.3s ease-out;
+}
+
+
+main {
+    width: 100%;
+    height: auto;            
+    display: block;
+    margin: 110px auto 0 auto;
+    float: none;
+    position: relative;
+}
+main section#fila-inicio {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+    background: url("../img/foxgraphy-slider-inicio-01.jpg") no-repeat top center fixed;
+    background-size: cover;
+}
+
+main section#fila-inicio article {
+    width: 1200px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#fila-inicio article h1 {
+    width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 200px 0px 0px;
+    font-size: 5.000em;
+}
+main section#fila-inicio article h2 {
+    width: 1100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 0px;
+    font-size: 2.000em;
+    font-weight: 300;
+}
+
+main section#quien-soy {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+
+}
+
+main section#quien-soy {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#quien-soy article {
+    width: 1200px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#quien-soy article img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 50px 0px;
+    float: left;
+}
+main section#quien-soy article div#caja-texto-quien-soy {
+    width: 900px;
+    height: auto;
+    display: block;
+    margin: 0px;
+    float: right;
+    padding: 50px;
+}
+main section#quien-soy article div#caja-texto-quien-soy h3 {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 20px 0px 0px;
+    font-size: 1.500em;
+    font-weight: 500;
+    color: #F0853E;
+}
+main section#quien-soy article div#caja-texto-quien-soy p {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 20px 0px;
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+main section#fila-slider-retrato {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+    background: url("../img/foxgraphy-slider-retratos-02.jpg") no-repeat top center fixed;
+    background-size: cover; 
+}
+main section#fila-slider-retrato article {
+    width: 1200px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+main section#fila-slider-retrato article h4 {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    padding: 200px 30px 0px;
+    font-size: 5.000em;
+    font-weight: bold;
+}
+
+main section#fila-fotos-retrato {}
+main section#fila-fotos-retrato article {}
+main section#fila-fotos-retrato article div.caja-01 {}
+main section#fila-fotos-retrato article div.caja-01 figure {}
+main section#fila-fotos-retrato article div.caja-01 figure a {}
+main section#fila-fotos-retrato article div.caja-01 figure img {}
+main section#fila-fotos-retrato article div.caja-01 figure a {}
+main section#fila-fotos-retrato article div.caja-01 figure a:hover {}
+main section#fila-fotos-retrato article div.caja-01 figure img {}
+
+main section#fila-slider-naturaleza { }
+main section#fila-slider-naturaleza article { }
+main section#fila-slider-naturaleza article h5 { }
+
+main section#fila-fotos-naturaleza {}
+main section#fila-fotos-naturaleza article {}
+main section#fila-fotos-naturaleza article div.caja-01 {}
+main section#fila-fotos-naturaleza article div.caja-01 a {}
+main section#fila-fotos-naturaleza article div.caja-01 a:hover {}
+main section#fila-fotos-naturaleza article div.caja-01 a img {}
+
+main section#fila-eventos {}
+main section#fila-eventos article.banner-slick {}
+main section#fila-eventos article.banner-slick div.slide {}
+main section#fila-eventos article.banner-slick div#slide-01 {}
+main section#fila-eventos article.banner-slick div#slide-01 h6 {}
+main section#fila-eventos article.banner-slick div#slide-02 {}
+main section#fila-eventos article.banner-slick div#slide-02 h6 {}
+
+main section#fila-fotos-eventos {}
+main section#fila-fotos-eventos article.slick-eventos {}
+main section#fila-fotos-eventos article.slick-eventos div.caja-01 {}
+main section#fila-fotos-eventos article.slick-eventos div.caja-01 h5 {}
+main section#fila-fotos-eventos article.slick-eventos div.caja-01 figure {}
+main section#fila-fotos-eventos article.slick-eventos div.caja-01 figure a {}
+main section#fila-fotos-eventos article.slick-eventos div.caja-01 figure a:hover {}
+main section#fila-fotos-eventos article.slick-eventos div.caja-01 figure a img {}
+              
+footer {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+    background: #000;
+}
+
+
+
+
+/* Responsive: */
+/*
+Escritorio      >= 1200px
+Tablets         <= 1199px --- >= 500px
+Móviles         <= 499px --- >= 340px
+
+Media-Queries + Breakpoints
+*/
+
+/* Aplica para el rango 1199px a 1100px */
+@media only screen and (max-width: 1199px){
+    main section#fila-quien-soy {
+        height: auto;
+    }
+    main section#fila-quien-soy article {
+        width: 80%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1099px){
+    
+}
+
+@media only screen and (max-width: 999px){
+    
+}
+
+@media only screen and (max-width: 899px){
+    
+}
+
+@media only screen and (max-width: 799px){
+    
+}
+
+@media only screen and (max-width: 699px){
+    
+}
+
+@media only screen and (max-width: 599px){
+    
+}
+
+@media only screen and (max-width: 499px){
+    
+}
+
+@media only screen and (max-width: 449px){
+    
+}
+
+@media only screen and (max-width: 399px){
+    
+}
+
+@media only screen and (max-width: 349px){
+    
+}
+
+
+
+
+
+
+
+
+
